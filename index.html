@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Idreesia Medical Hall</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#f4f9ff;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* Cursor Glow */
+.cursor{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:rgba(0, 123, 255, 0.4);
+    position:fixed;
+    pointer-events:none;
+    transform:translate(-50%, -50%);
+    transition:0.1s ease;
+    z-index:9999;
+    backdrop-filter: blur(2px);
+}
+
+/* Header */
+header{
+    height:100vh;
+    background:linear-gradient(135deg,#007bff,#00c6ff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    flex-direction:column;
+    padding:20px;
+}
+
+header h1{
+    font-size:3rem;
+    animation:fadeDown 1s ease forwards;
+}
+
+header p{
+    margin-top:15px;
+    font-size:1.2rem;
+    max-width:600px;
+    animation:fadeUp 1.5s ease forwards;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    background:white;
+    color:#007bff;
+    font-weight:600;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0056b3;
+    color:white;
+    transform:scale(1.05);
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:30px;
+    color:#007bff;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.contact{
+    background:#007bff;
+    color:white;
+    border-radius:20px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0056b3;
+    color:white;
+}
+
+/* Animations */
+@keyframes fadeDown{
+    from{opacity:0; transform:translateY(-30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header h1{font-size:2rem;}
+}
+</style>
+</head>
+<body>
+
+<div class="cursor"></div>
+
+<header>
+    <h1>Idreesia Medical Hall</h1>
+    <p>Your trusted pharmacy providing genuine medicines and healthcare products with professional service and care.</p>
+    <button class="btn" onclick="scrollToSection()">Contact Us</button>
+</header>
+
+<section>
+    <h2 class="section-title">About Us</h2>
+    <div class="card">
+        <p>
+            Idreesia Medical Hall is committed to providing authentic medicines, healthcare products, 
+            and reliable pharmaceutical services. We prioritize customer care, trust, and professional service.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Location</h2>
+    <div class="card">
+        <p><strong>Near Highway Office Lahore More Khanewal</strong></p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="card contact">
+        <p><strong>Phone:</strong> +92 3035591912</p>
+        <p>We are here to serve you with quality medicines and care.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Idreesia Medical Hall | All Rights Reserved
+</footer>
+
+<script>
+// Smooth scroll
+function scrollToSection(){
+    document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+}
+
+// Cursor effect
+const cursor = document.querySelector(".cursor");
+document.addEventListener("mousemove", (e)=>{
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+});
+
+// Reveal animation on scroll
+const cards = document.querySelectorAll(".card");
+window.addEventListener("scroll", ()=>{
+    cards.forEach(card=>{
+        const position = card.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+        if(position < screenHeight - 100){
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+        }
+    });
+});
+</script>
+
+</body>
+</html>

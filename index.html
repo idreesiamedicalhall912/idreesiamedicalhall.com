@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Idreesia Medical Hall</title>
-
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -13,7 +11,8 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
@@ -22,23 +21,56 @@ body{
     overflow-x:hidden;
 }
 
-/* Cursor Glow */
+/* Cursor */
 .cursor{
-    width:20px;
-    height:20px;
+    width:18px;
+    height:18px;
+    border: 2px solid red;
     border-radius:50%;
-    border: 1px solid rgba(0, 123, 255, 0.4);
-    background:transaprent;
     position:fixed;
     pointer-events:none;
-    transform:translate(-50%, -50%);
-    transition:0.1s ease;
+    transform:translate(-50%,-50%);
+    transition:0.08s ease;
     z-index:9999;
-    backdrop-filter: blur(2px);
 }
 
-/* Header */
-header{
+/* Navbar */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+nav h2{
+    color:#007bff;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#007bff;
+}
+
+/* Hero */
+.hero{
     height:100vh;
     background:linear-gradient(135deg,#007bff,#00c6ff);
     display:flex;
@@ -50,46 +82,49 @@ header{
     padding:20px;
 }
 
-header h1{
+.hero h1{
     font-size:3rem;
-    animation:fadeDown 1s ease forwards;
+    animation:fadeDown 1s ease;
 }
 
-header p{
+.hero p{
     margin-top:15px;
-    font-size:1.2rem;
     max-width:600px;
-    animation:fadeUp 1.5s ease forwards;
 }
 
 .btn{
     margin-top:25px;
-    padding:12px 25px;
-    border:none;
+    padding:12px 30px;
     background:white;
     color:#007bff;
-    font-weight:600;
+    border:none;
     border-radius:30px;
     cursor:pointer;
+    font-weight:600;
     transition:0.3s;
 }
 
 .btn:hover{
     background:#0056b3;
     color:white;
-    transform:scale(1.05);
 }
 
 /* Sections */
 section{
-    padding:80px 10%;
+    padding:100px 10%;
     text-align:center;
 }
 
 .section-title{
     font-size:2rem;
-    margin-bottom:30px;
+    margin-bottom:40px;
     color:#007bff;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
 .card{
@@ -97,40 +132,61 @@ section{
     padding:30px;
     border-radius:15px;
     box-shadow:0 10px 30px rgba(0,0,0,0.1);
-    transition:0.3s;
+    transition:0.4s;
+    opacity:0;
+    transform:translateY(40px);
 }
 
 .card:hover{
     transform:translateY(-10px);
 }
 
-.contact{
+/* Contact */
+.contact-box{
     background:#007bff;
     color:white;
+    padding:40px;
     border-radius:20px;
 }
 
+/* Footer */
 footer{
-    text-align:center;
-    padding:20px;
     background:#0056b3;
     color:white;
+    text-align:center;
+    padding:25px;
 }
 
-/* Animations */
+/* WhatsApp */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
+/* Animation */
 @keyframes fadeDown{
     from{opacity:0; transform:translateY(-30px);}
     to{opacity:1; transform:translateY(0);}
 }
 
-@keyframes fadeUp{
-    from{opacity:0; transform:translateY(30px);}
-    to{opacity:1; transform:translateY(0);}
-}
-
 /* Responsive */
 @media(max-width:768px){
-    header h1{font-size:2rem;}
+    nav ul{
+        display:none;
+    }
 }
 </style>
 </head>
@@ -138,63 +194,95 @@ footer{
 
 <div class="cursor"></div>
 
-<header>
-    <h1>Idreesia Medical Hall</h1>
-    <p>Your trusted pharmacy providing genuine medicines and healthcare products with professional service and care.</p>
-    <button class="btn" onclick="scrollToSection()">Contact Us</button>
-</header>
+<nav>
+    <h2>Idreesia Medical Hall</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-<section>
+<!-- Hero -->
+<section class="hero" id="home">
+    <h1>Your Trusted Pharmacy in Khanewal</h1>
+    <p>Providing genuine medicines, healthcare products and professional pharmaceutical services.</p>
+    <a href="#contact"><button class="btn">Contact Now</button></a>
+</section>
+
+<!-- About -->
+<section id="about">
     <h2 class="section-title">About Us</h2>
-    <div class="card">
-        <p>
-            Idreesia Medical Hall is committed to providing authentic medicines, healthcare products, 
-            and reliable pharmaceutical services. We prioritize customer care, trust, and professional service.
-        </p>
+    <div class="cards">
+        <div class="card">
+            <p>Idreesia Medical Hall is dedicated to providing authentic medicines and trusted healthcare solutions.</p>
+        </div>
+        <div class="card">
+            <p>Located Near Highway Office Lahore More Khanewal, we serve our community with honesty and care.</p>
+        </div>
     </div>
 </section>
 
-<section>
-    <h2 class="section-title">Location</h2>
-    <div class="card">
-        <p><strong>Near Highway Office Lahore More Khanewal</strong></p>
+<!-- Services -->
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>All Medicines Available</h3>
+            <p>Branded and generic medicines.</p>
+        </div>
+        <div class="card">
+            <h3>Healthcare Products</h3>
+            <p>Supplements, surgical items and more.</p>
+        </div>
+        <div class="card">
+            <h3>Professional Guidance</h3>
+            <p>Experienced and trusted service.</p>
+        </div>
     </div>
 </section>
 
+<!-- Contact -->
 <section id="contact">
     <h2 class="section-title">Contact Us</h2>
-    <div class="card contact">
+    <div class="contact-box">
+        <p><strong>Location:</strong> Near Highway Office Lahore More Khanewal</p>
         <p><strong>Phone:</strong> +92 3035591912</p>
-        <p>We are here to serve you with quality medicines and care.</p>
+        <p>We are here to serve you with quality medicines.</p>
     </div>
+
+    <br><br>
+
+    <!-- Google Map -->
+    <iframe 
+        src="https://maps.google.com/maps?q=Khanewal&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+        width="100%" height="300" style="border-radius:15px;" 
+        loading="lazy"></iframe>
 </section>
 
 <footer>
     © 2026 Idreesia Medical Hall | All Rights Reserved
 </footer>
 
-<script>
-// Smooth scroll
-function scrollToSection(){
-    document.getElementById("contact").scrollIntoView({behavior:"smooth"});
-}
+<a href="https://wa.me/923035591912" class="whatsapp" target="_blank">💬</a>
 
-// Cursor effect
-const cursor = document.querySelector(".cursor");
-document.addEventListener("mousemove", (e)=>{
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
+<script>
+// Cursor
+const cursor=document.querySelector(".cursor");
+document.addEventListener("mousemove",(e)=>{
+    cursor.style.left=e.clientX+"px";
+    cursor.style.top=e.clientY+"px";
 });
 
-// Reveal animation on scroll
-const cards = document.querySelectorAll(".card");
-window.addEventListener("scroll", ()=>{
+// Scroll Reveal
+const cards=document.querySelectorAll(".card");
+window.addEventListener("scroll",()=>{
     cards.forEach(card=>{
-        const position = card.getBoundingClientRect().top;
-        const screenHeight = window.innerHeight;
-        if(position < screenHeight - 100){
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
+        const top=card.getBoundingClientRect().top;
+        if(top<window.innerHeight-100){
+            card.style.opacity="1";
+            card.style.transform="translateY(0)";
         }
     });
 });

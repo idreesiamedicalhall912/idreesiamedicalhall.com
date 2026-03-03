@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idreesia Medical Hall</title>
+    <link rel="shortcut icon" href="images/Idreesia Logo.png" type="image/x-icon">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_450.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <marquee behavior="" direction="">
+        <p>
+            <span>Offer</span>
+            Flat 5% Discount On Medicine For Order More than 1,500 PKR <a href="https://wa.me/923035591912">Shop Now</a>
+        </p>
+        <p>
+            <span>Offer</span>
+            Flat 5% Discount On Medicine For Order More than 1,500 PKR <a href="https://wa.me/923035591912">Shop Now</a>
+        </p>
+    </marquee>
+    <nav>
+        <div class="nav-cont">
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="images/Idreesia Logo.png  " alt="lsd">
+                </div>
+                <span class="logo-name">Idreesia</span>
+            </div>
+            <ul>
+                <li class="close"><i data-lucide="x" onclick="closeMenu()"></i></li>
+                <li> <a href="">Home</a></li>
+                <li> <a href="#herbiotic">SC Products</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#contact">Services</a></li>
+                <li> <a href="#contact">Map</a></li>
+            </ul>
+            <div class="connav">
+                <div class="contact">
+                    <a href="">Contact</a>
+                </div>
+                <i onclick="openMenu()" data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- **************8888888888888888****************** -->
+    <!-- ************** Sliders ****************** -->
+    <!-- **************8888888888888888****************** -->
+    <section id="slider-sec" class="slider-sec">
+        <div class="slider-cont">
+            <div class="slider">
+                <div class="img-cont">
+                    <img src="images/sm1.jpg" style="transform: scaleX(-1);" alt="sdf">
+                </div>
+                <div class="content">
+                    <div class="filled">
+                        <p class="auth">Authorized M/S</p>
+                        <div class="title">Reliable <span>Medicine</span><br> & Expert Care</div>
+                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, numquam ipsam
+                            odit
+                            officiis ex cum eos enim non aliquid quos beatae quibusdam quod! In animi enim laboriosam.
+                            Placeat, quam rem?</p>
+                        <div class="btn-cont">
+                            <div class="btn1 btn">
+                                <button type="button">Show More</button>
+                            </div>
+                            <div class="btn2 btn">
+                                <button type="button">Our Services</button>
+
+                            </div>
+                        </div>
+                        <div class="blank"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="img-cont">
+                    <img src="images/26363.jpg" alt="sdf">
+                </div>
+                <div class="content">
+                    <div class="filled">
+                        <p class="auth">Authorized M/S</p>
+                        <div class="title">Health Care <span>Products</span></div>
+                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, numquam
+                            ipsam
+                            odit
+                            officiis ex cum eos enim non aliquid quos beatae quibusdam quod! In animi enim
+                            laboriosam.
+                            Placeat, quam rem?</p>
+                        <div class="btn-cont">
+                            <div class="btn1 btn">
+                                <button type="button">Show More</button>
+                            </div>
+                            <div class="btn2 btn">
+                                <button type="button">Our Services</button>
+
+                            </div>
+                        </div>
+                        <div class="blank"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="img-cont">
+                    <img src="images/fitness.png" alt="sdf">
+                </div>
+                <div class="content">
+                    <div class="filled">
+                        <p class="auth">Authorized M/S</p>
+                        <div class="title">Medicine</div>
+                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, numquam
+                            ipsam
+                            odit
+                            officiis ex cum eos enim non aliquid quos beatae quibusdam quod! In animi enim
+                            laboriosam.
+                            Placeat, quam rem?</p>
+                        <div class="btn-cont">
+                            <div class="btn1 btn">
+                                <button type="button">Show More</button>
+                            </div>
+                            <div class="btn2 btn">
+                                <button type="button">Our Services</button>
+
+                            </div>
+                        </div>
+                        <div class="blank"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="change-slides">
+            <i onclick="slideBack()" data-lucide="chevron-left"></i>
+            <i onclick="slideForward()" data-lucide="chevron-right"></i>
+        </div>
+    </section>
+    <!-- +++++------------++++++-----------++++++ -->
+    <!-- Herbiotic Products Section -->
+    <!-- +++++------------++++++-----------++++++ -->
+    <section id="herbiotic" class="herbiotic">
+        <div class="title">
+            <h3>Self Care <span>Products</span></h3>
+            <p class="title-desc">
+                Explore our curated selection of verified healthcare and wellness essentials for your daily vitality.
+            </p>
+        </div>
+        <div class="cards-cont">
+            <div class="card">
+                <div class="img-head">
+                    <img src="https://herbiotics.com.pk/cdn/shop/files/collagen_d0a5226c-a2ea-4129-9550-f3114271b38d.png?v=1738326312"
+                        alt="kd">
+                </div>
+                <div class="body">
+                    <p class="title">Collagix</p>
+                    <div class="tags-cont">
+                        <span class="tag">Hair</span>
+                        <span class="tag">Skin</span>
+                        <span class="tag">Nail</span>
+                    </div>
+                    <p class="desc">Super Collagen Supplement</p>
+                    <button type="button">Show More</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-head">
+                    <img src="https://herbiotics.com.pk/cdn/shop/files/Magnesium_glycinate_1.png?v=1744882674" alt="kd">
+                </div>
+                <div class="body">
+                    <p class="title">Magnesium Glycinate</p>
+                    <div class="tags-cont">
+                        <span class="tag">Muscle</span>
+                        <span class="tag">Brain</span>
+                    </div>
+                    <p class="desc">A rich Supplement for healthy brain and muscles</p>
+                    <button type="button">Show More</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-head">
+                    <img src="https://herbiotics.com.pk/cdn/shop/files/Biotin_5000_818d227a-f97d-48b2-bbee-867d3302f78a.png?v=1738326312"
+                        alt="kd">
+                </div>
+                <div class="body">
+                    <p class="title">Biotin</p>
+                    <div class="tags-cont">
+                        <span class="tag">Skin</span>
+                        <span class="tag">Nail</span>
+                        <span class="tag">Hair</span>
+                    </div>
+                    <p class="desc">Top-Rated Biotin in Pakistan for Rapid Hair Growth</p>
+                    <button type="button">Show More</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-head">
+                    <img src="https://herbiotics.com.pk/cdn/shop/files/Bcomplex.png?v=1764240763" alt="kd">
+                </div>
+                <div class="body">
+                    <p class="title">B-Complex </p>
+                    <div class="tags-cont">
+                        <span class="tag">Energy</span>
+                    </div>
+                    <p class="desc">Combination of All B-Vitamins. Supports energy metablosim promotes nervious system
+                        health</p>
+                    <button type="button">Show More</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-head">
+                    <img src="https://herbiotics.com.pk/cdn/shop/files/Vitaminb12.png?v=1764240763" alt="kd">
+                </div>
+                <div class="body">
+                    <p class="title">Vitamin B12</p>
+                    <div class="tags-cont">
+                        <span class="tag">Energy</span>
+                    </div>
+                    <p class="desc">Boosts Energy & reduce weakness & tiredness.</p>
+                    <button type="button">Show More</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-head">
+                    <img src="https://herbiotics.com.pk/cdn/shop/files/Ginosin_eed9a25e-8ec0-409a-a9d1-241b6e0c0032.png?v=1738404361"
+                        alt="kd">
+                </div>
+                <div class="body">
+                    <p class="title">Ginosin</p>
+                    <div class="tags-cont">
+                        <span class="tag">Energy</span>
+                    </div>
+                    <p class="desc">Herbiotic's Ginseng Supplement Helps to reduce Fatigue and Tiredness & increases
+                        energy levels.</p>
+                    <button type="button">Show More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="img-section">
+            <div class="img-cont">
+                <img src="https://scontent.fmux3-1.fna.fbcdn.net/v/t39.30808-6/486655466_4103176446672521_500082735939946818_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=b895b5&_nc_ohc=aqMg3OH0HzgQ7kNvwGIB93d&_nc_oc=AdmPoNlg2ad1jVsSPzbbsZaVz7FUdYF5Sq3kvrheDhMRBMrsLrOseKvuXQYnAPmjXEo&_nc_zt=23&_nc_ht=scontent.fmux3-1.fna&_nc_gid=d5M401Shm1akG2M6g9d7Cg&_nc_ss=8&oh=00_AfwZcj3J-rxTdKPVsauegSQdn20CBqotEoijvNjTRkDSrg&oe=69AB6BD7"
+                    width="40px
+                " alt="skd">
+                <div class="prop-name">
+                    <span>Sulman Ashiq</span>
+                </div>
+            </div>
+            <div class="details">
+                <i class="bi bi-clock"></i>
+                <span>9+ Years</span>
+                <p>Professional Experience</p>
+            </div>
+        </div>
+        <div class="content">
+            <p class="auth">Leadership Vision </p>
+            <p class="title">Propritor's Message</p>
+            <p class="desc">"Our mission at Idreesia Medical Hall has always been centered on community wellbeing. We
+                don't just provide medicine; we provide assurance, guidance, and a commitment to your health. Every
+                product we stock is selected with the utmost care for efficacy and safety."</p>
+            <div class="cards-cont">
+                <div class="card">
+                    <div class="icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <p class="title">Quick Service</p>
+                    <p class="desc">Efficient prescription handling with minimal wait times for all our valued
+                        customers.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <p class="title">Trusted By Many</p>
+                    <p class="desc">The community's first choice for authentic medicines and reliable health advice for
+                        generations.</p>
+                </div>
+                <div class="card ratings">
+                    <div class="cont">
+                        <div class="icon">
+                            <i data-lucide="message-square"></i>
+                        </div>
+                        <div class="details">
+                            <p class="title">Customer Rattings</p>
+                            <p class="desc">Excellence in service, consistently rated 4.9/5 by our local patients.</p>
+                        </div>
+                    </div>
+                    <div class="rate">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="mail">
+            <div class="icon">
+                <i data-lucide="mail"></i>
+            </div>
+            <div class="details">
+                <span>Email Us</span>
+                <p onclick="window.location.href='mailto:idreesiamedicalhall912@gmail.com'">
+                    idreesiamedicalhall912@gmail.com</p>
+            </div>
+        </div>
+        <div class="vr"></div>
+        <div class="call-cont">
+            <div class="call">
+                <div class="icon">
+                    <i data-lucide="phone"></i>
+                </div>
+                <div class="details">
+                    <span>Call Helpline</span>
+                    <p onclick="contactOptions()">0303-5591912</p>
+                </div>
+            </div>
+            <button type="button" onclick="location.href='https://maps.app.goo.gl/PjQqvb8L4XnDZ6iR6'">On Map</button>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-cont">
+            <div class="content">
+                <div class="brand">
+                    <div class="title">
+                        <div class="logo-cont">
+                            <img src="images/Idreesia Logo.png" width="40px" alt="dks">
+                        </div>
+                        <span class="name">Idreesia Medical Hall</span>
+                    </div>
+                    <div class="desc">
+                        A leading name in healthcare in Khanewal, Punjab. Dedicated to bringing you authentic
+                        medication, health supplements, and professional care right to your doorstep.
+                    </div>
+                    <div class="location">
+                        <div class="icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <span>Near Highway Office Lahore More, Khanewal, Punjab, Pakistan</span>
+                    </div>
+                </div>
+                <div class="quick">
+                    <div class="title">
+                        Quick Links
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">Categories</a>
+                        </li>
+                        <li>
+                            <a href="">Our Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Services</a>
+                        </li>
+                        <li>
+                            <a href="">Location Map</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <div class="title">
+                        Social Links
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100094179210407">
+                                <div class="icon">
+                                    <i data-lucide="facebook"></i>
+                                </div>
+                                <span>FaceBook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/profile.php?id=100094179210407">
+                                <div class="icon">
+                                    <i data-lucide="instagram"></i>
+                                </div>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="icon">
+                                    <i data-lucide="linkedin"></i>
+                                </div>
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="developer">
+                    <div class="title">
+                        Developer Credit
+                    </div>
+                    <div class="card">
+                        <div class="img-cont">
+                            <img src="My Profile.png" width="40px" alt="sld">
+                        </div>
+                        <div class="details">
+                            <p>Danish Ameer</p>
+                            <span>Web Developer</span>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=61588232642412">
+                                        <div class="icon">
+                                            <i data-lucide="facebook"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/danishameer1438/">
+                                        <div class="icon">
+                                            <i data-lucide="instagram"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.linkedin.com/in/danish-ameer-b4906338b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                        <div class="icon">
+                                            <i data-lucide="linkedin"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.github.com/selfless1438-arch">
+                                        <div class="icon">
+                                            <i data-lucide="github"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Idreesia Medical Hall
+                </p>
+                <p>
+                    Developed By Danish Ameer
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -204,4 +204,29 @@
         color: var(--white-color);
     }
 
+        
+        /* Modal */
+        .modal {
+            padding: 0 5px;
+        }
+        
+        
+        .modal .modal-dialogue .timer span {
+            font-size: 12px;
+        }
+        
+        .modal .modal-dialogue .timer svg[data-lucide] {
+            width: 20px;
+            display: none;
+            height: 20px;
+        }
+        
+        .modal .modal-dialogue .claim a {
+            font-size: 12px;
+        }
+        
+        .modal .modal-dialogue .claim a svg[data-lucide] {
+            width: 20px;
+            height: 20px;
+        }
 }

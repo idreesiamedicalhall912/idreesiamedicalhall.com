@@ -5,7 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idreesia Medical Hall</title>
-    
+    <link rel="shortcut icon" href="images/Idreesia Logo.png" type="image/x-icon">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_450.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- ✅ Basic Meta Tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -44,21 +54,33 @@
     <meta name="business:contact_data:phone_number" content="+923035591912">
     <meta name="business:contact_data:website" content="https://idreesiamedicalhall912.com/">
 
-    <link rel="shortcut icon" href="images/Idreesia Logo.png" type="image/x-icon">
-    <!-- Style Sheet -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media_450.css">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- Development version -->
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <!-- SweetAlert2 -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <!-- ✅ Schema Markup (JSON-LD for Google) -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Pharmacy",
+  "name": "Idreesia Medical Hall",
+  "image": "https://yourdomain.com/images/medical-hall-banner.jpg",
+  "@id": "https://yourdomain.com",
+  "url": "https://yourdomain.com",
+  "telephone": "+923035591912",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Main Bazar, Khanewal Sharif",
+    "addressLocality": "Khanewal Sharif",
+    "addressRegion": "Punjab",
+    "postalCode": "54000",
+    "addressCountry": "PK"
+  },
+  "openingHours": "Mo-Sa 08:00-22:00",
+  "priceRange": "$",
+  "description": "Idreesia Medical Hall is a trusted medical store in Khanewal Sharif, Pakistan providing original medicines, healthcare, and wellness products."
+}
+</script>
 </head>
 
 <body>
-    <marquee behavior="" direction="">
+    <marquee behavior="" onmouseover="this.stop();" onmouseout="this.start();" direction="">
         <p>
             <span>Offer</span>
             Flat 5% Discount On Medicine For Order More than 1,500 PKR <a href="https://wa.me/923035591912">Shop Now</a>
@@ -105,10 +127,8 @@
                     <div class="filled">
                         <p class="auth">Authorized M/S</p>
                         <div class="title">Reliable <span>Medicine</span><br> & Expert Care</div>
-                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, numquam ipsam
-                            odit
-                            officiis ex cum eos enim non aliquid quos beatae quibusdam quod! In animi enim laboriosam.
-                            Placeat, quam rem?</p>
+                        <p class="desc">From everyday essentials to prescribed treatments, we’re here to serve your
+                            health needs with care and accuracy.</p>
                         <div class="btn-cont">
                             <div class="btn1 btn">
                                 <button type="button">Show More</button>
@@ -129,13 +149,10 @@
                 <div class="content">
                     <div class="filled">
                         <p class="auth">Authorized M/S</p>
-                        <div class="title">Health Care <span>Products</span></div>
-                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, numquam
-                            ipsam
-                            odit
-                            officiis ex cum eos enim non aliquid quos beatae quibusdam quod! In animi enim
-                            laboriosam.
-                            Placeat, quam rem?</p>
+                        <div class="title">Wide Range of <span>Medicines</span></div>
+                        <p class="desc">We stock a wide variety of prescription and OTC medicines from trusted
+                            brands(like Sami, Abbot, Snofi, GSK, AGP, ETC), ensuring safe treatments and quick access to
+                            what you need most.</p>
                         <div class="btn-cont">
                             <div class="btn1 btn">
                                 <button type="button">Show More</button>
@@ -156,13 +173,10 @@
                 <div class="content">
                     <div class="filled">
                         <p class="auth">Authorized M/S</p>
-                        <div class="title">Medicine</div>
-                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, numquam
-                            ipsam
-                            odit
-                            officiis ex cum eos enim non aliquid quos beatae quibusdam quod! In animi enim
-                            laboriosam.
-                            Placeat, quam rem?</p>
+                        <div class="title">Health Care <span>Products</span></div>
+                        <p class="desc">Discover a wide range of healthcare essentials, vitamins, and wellness products
+                            to keep you healthy every day. From skincare to supplements, we stock top-quality products
+                            to support your healthy lifestyle.</p>
                         <div class="btn-cont">
                             <div class="btn1 btn">
                                 <button type="button">Show More</button>
@@ -192,94 +206,13 @@
                 Explore our curated selection of verified healthcare and wellness essentials for your daily vitality.
             </p>
         </div>
-        <div class="cards-cont">
-            <div class="card">
-                <div class="img-head">
-                    <img src="https://herbiotics.com.pk/cdn/shop/files/collagen_d0a5226c-a2ea-4129-9550-f3114271b38d.png?v=1738326312"
-                        alt="kd">
-                </div>
-                <div class="body">
-                    <p class="title">Collagix</p>
-                    <div class="tags-cont">
-                        <span class="tag">Hair</span>
-                        <span class="tag">Skin</span>
-                        <span class="tag">Nail</span>
-                    </div>
-                    <p class="desc">Super Collagen Supplement</p>
-                    <button type="button">Show More</button>
-                </div>
+        <div class="cc-c" id="cc-c">
+            <div class="cards-cont" id="herbioticProducts">
+                <!-- Here will be all products -->
             </div>
-            <div class="card">
-                <div class="img-head">
-                    <img src="https://herbiotics.com.pk/cdn/shop/files/Magnesium_glycinate_1.png?v=1744882674" alt="kd">
-                </div>
-                <div class="body">
-                    <p class="title">Magnesium Glycinate</p>
-                    <div class="tags-cont">
-                        <span class="tag">Muscle</span>
-                        <span class="tag">Brain</span>
-                    </div>
-                    <p class="desc">A rich Supplement for healthy brain and muscles</p>
-                    <button type="button">Show More</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-head">
-                    <img src="https://herbiotics.com.pk/cdn/shop/files/Biotin_5000_818d227a-f97d-48b2-bbee-867d3302f78a.png?v=1738326312"
-                        alt="kd">
-                </div>
-                <div class="body">
-                    <p class="title">Biotin</p>
-                    <div class="tags-cont">
-                        <span class="tag">Skin</span>
-                        <span class="tag">Nail</span>
-                        <span class="tag">Hair</span>
-                    </div>
-                    <p class="desc">Top-Rated Biotin in Pakistan for Rapid Hair Growth</p>
-                    <button type="button">Show More</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-head">
-                    <img src="https://herbiotics.com.pk/cdn/shop/files/Bcomplex.png?v=1764240763" alt="kd">
-                </div>
-                <div class="body">
-                    <p class="title">B-Complex </p>
-                    <div class="tags-cont">
-                        <span class="tag">Energy</span>
-                    </div>
-                    <p class="desc">Combination of All B-Vitamins. Supports energy metablosim promotes nervious system
-                        health</p>
-                    <button type="button">Show More</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-head">
-                    <img src="https://herbiotics.com.pk/cdn/shop/files/Vitaminb12.png?v=1764240763" alt="kd">
-                </div>
-                <div class="body">
-                    <p class="title">Vitamin B12</p>
-                    <div class="tags-cont">
-                        <span class="tag">Energy</span>
-                    </div>
-                    <p class="desc">Boosts Energy & reduce weakness & tiredness.</p>
-                    <button type="button">Show More</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-head">
-                    <img src="https://herbiotics.com.pk/cdn/shop/files/Ginosin_eed9a25e-8ec0-409a-a9d1-241b6e0c0032.png?v=1738404361"
-                        alt="kd">
-                </div>
-                <div class="body">
-                    <p class="title">Ginosin</p>
-                    <div class="tags-cont">
-                        <span class="tag">Energy</span>
-                    </div>
-                    <p class="desc">Herbiotic's Ginseng Supplement Helps to reduce Fatigue and Tiredness & increases
-                        energy levels.</p>
-                    <button type="button">Show More</button>
-                </div>
+            <div class="show" id="showtoggler">
+                <button type="button" onclick="showFull()" class="more">Show More</button>
+                <button type="button" onclick="showLess()" class="less"><i data-lucide="chevron-up"></i></button>
             </div>
         </div>
     </section>
@@ -383,7 +316,7 @@
                         A leading name in healthcare in Khanewal, Punjab. Dedicated to bringing you authentic
                         medication, health supplements, and professional care right to your doorstep.
                     </div>
-                    <div class="location">
+                    <div class="location" onclick="location.href='https://maps.app.goo.gl/PjQqvb8L4XnDZ6iR6'">
                         <div class="icon">
                             <i data-lucide="map-pin"></i>
                         </div>
@@ -499,7 +432,27 @@
             </div>
         </div>
     </footer>
+    <!-- Modal for Add -->
+    <div class="modal" id="offerModal1">
+        <div class="modal-dialogue">
+            <i onclick="closeModal('offerModal1')" data-lucide="x"></i>
+            <div class="img-cont">
+                <img id="modalImage" src="" alt="">
+            </div>
+            <div class="timer">
+                <i data-lucide="clock"></i>
+                <span id="closeTimer">Close in 10 s</span>
+            </div>
+            <div class="claim">
+                <a id="offerLink" href="" target="_blank">
+                    <i data-lucide="shopping-bag"></i>
+                    Claim Now
+                </a>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
+    <script src="products.js"></script>
 </body>
 
 </html>
